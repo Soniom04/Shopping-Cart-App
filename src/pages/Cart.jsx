@@ -65,7 +65,7 @@ export default function Cart() {
         <div className="flex justify-center mx-auto mb-5 relative min-h-screen">
             {
                 cart.length === 0 ?
-                    <div className="mt-52 flex flex-col justify-center items-center gap-y-4">
+                    <div className="-mt-60 flex flex-col justify-center items-center gap-y-4">
                         <p className="text-center text-3xl font-bold">Your cart is Empty!</p>
                         <NavLink to='/'>
                             <button className="bg-green-500 rounded-xl text-white font-bold py-2 px-4 text-lg">Shop Now</button>
