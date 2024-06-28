@@ -62,7 +62,7 @@ export default function Cart() {
     }, [cart])
 
     return (
-        <div className="flex justify-center items-center mx-auto mb-5 relative min-h-screen">
+        <div className="flex justify-center mx-auto mb-5 relative min-h-screen">
             {
                 cart.length === 0 ?
                     <div className="mt-52 flex flex-col justify-center items-center gap-y-4">
@@ -71,7 +71,7 @@ export default function Cart() {
                             <button className="bg-green-500 rounded-xl text-white font-bold py-2 px-4 text-lg">Shop Now</button>
                         </NavLink>
                     </div> :
-                    <div className="flex lg:flex-row flex-col justify-between items-start w-[60%] -mt-1 gap-10 h-full min-w-[500px]">
+                    <div className="flex lg:flex-row flex-col justify-between w-[60%] -mt-1 gap-10 h-full min-w-[500px]">
                         <div className="w-full lg:w-[60%] space-y-8 flex flex-col h-full">
                             {
                                 cart.map(item => <CartItem item={item} key={item.key} />)
